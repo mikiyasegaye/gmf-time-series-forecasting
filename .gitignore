@@ -212,5 +212,16 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
+# Model files - ignore trained models but keep directory structure
+models/*
+!models/.gitkeep
+# Specifically ignore common ML model file types
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
 # macOS DS_Store files
 .DS_Store
