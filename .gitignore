@@ -194,6 +194,18 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
@@ -223,5 +235,35 @@ models/*
 *.pth
 *.onnx
 
-# macOS DS_Store files
+# Generated reports and outputs
+demo_reports/
+test_reports/
+reports/
+outputs/
+logs/
+
+# Temporary and cache files
+*.tmp
+*.temp
+*.cache
+.cache/
+temp/
+tmp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# macOS DS_Store files (handled above in OS generated files)
