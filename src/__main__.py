@@ -49,7 +49,7 @@ Examples:
     parser.add_argument(
         '--version',
         action='version',
-        version='GMF Time Series Forecasting v2.0.0'
+        version='GMF Time Series Forecasting v3.0.0'
     )
 
     args = parser.parse_args()
@@ -67,7 +67,7 @@ def launch_dashboard():
         from dashboard import GMFDashboard
 
         print("🚀 Launching GMF Time Series Forecasting Dashboard...")
-        print("📊 Version: 2.0.0")
+        print("📊 Version: 3.0.0")
         print("=" * 50)
 
         # Initialize and run dashboard
@@ -91,7 +91,7 @@ def run_tests():
         from tests.test_gmf_system import GMFTestSuite
 
         print("🧪 Running GMF Time Series Forecasting Test Suite...")
-        print("📊 Version: 2.0.0")
+        print("📊 Version: 3.0.0")
         print("=" * 50)
 
         # Initialize and run test suite

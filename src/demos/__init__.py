@@ -9,7 +9,8 @@ Version: 2.0.0
 """
 
 from .advanced_features_demo import main as run_advanced_features_demo
+from .production_features_demo import main as run_production_features_demo
 
-__all__ = ['run_advanced_features_demo']
-__version__ = "2.0.0"
+__all__ = ['run_advanced_features_demo', 'run_production_features_demo']
+__version__ = "3.0.0"
 __author__ = "GMF Investment Team"

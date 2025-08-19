@@ -5,7 +5,7 @@ A comprehensive, production-ready time series forecasting and portfolio optimiza
 system designed for financial markets analysis and investment decision support.
 
 Author: GMF Investment Team
-Version: 2.0.0
+Version: 3.0.0
 """
 
 # Core data processing modules
@@ -38,10 +38,14 @@ from .reporting.automated_reporter import AutomatedReporter, ReportTemplate
 from .dashboard import GMFDashboard
 
 # Demo modules
-from .demos import run_advanced_features_demo
+from .demos import run_advanced_features_demo, run_production_features_demo
+
+# Phase 3: Production Readiness
+from .api import app as api_app
+from .utils.monitoring import performance_monitor, health_checker, metrics_collector
 
 # Package metadata
-__version__ = "2.0.0"
+__version__ = "3.0.0"
 __author__ = "GMF Investment Team"
 __email__ = "investments@gmf.com"
 
@@ -76,5 +80,8 @@ __all__ = [
     'GMFDashboard',
 
     # Demo modules
-    'run_advanced_features_demo'
+    'run_advanced_features_demo', 'run_production_features_demo',
+
+    # Phase 3: Production Readiness
+    'api_app', 'performance_monitor', 'health_checker', 'metrics_collector'
 ]
